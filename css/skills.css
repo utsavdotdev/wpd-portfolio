@@ -1,0 +1,75 @@
+.all-skills {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.skills-track {
+  display: flex;
+  gap: var(--spacing-lg);
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  padding: 20px 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* Assumes track contains 2 sets of items */
+}
+
+/* Pause scroll on hover */
+.all-skills:hover .skills-track {
+  animation-play-state: paused;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--color-white);
+  padding: 20px 40px;
+  border: 1px solid var(--color-text-main); /* Minimal border */
+  border-radius: var(--border-radius); /* Softened */
+  box-shadow: none;
+  min-width: 150px;
+}
+
+.skill:hover {
+  background: var(--color-text-main);
+}
+
+.skill:hover i,
+.skill:hover p {
+  color: var(--color-white);
+}
+
+.skill i {
+  font-size: 2rem;
+  color: var(--color-text-main);
+  transition: color 0.3s;
+}
+
+.skill p {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  letter-spacing: 0.5px;
+  text-align: center;
+  transition: color 0.3s;
+}

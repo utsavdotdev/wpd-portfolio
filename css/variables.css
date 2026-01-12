@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --color-primary: #ffffff; 
+  --color-text-main: #000000; 
+  --color-text-light: #555555; 
+  --color-accent: #000000; 
+  --color-white: #ffffff;
+  --color-gray-light: #f4f4f4;
+
+  /* Fonts */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Quicksand", sans-serif;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+  --container-width: 1200px;
+
+  /* Borders */
+  --border-radius: 16px;
+}

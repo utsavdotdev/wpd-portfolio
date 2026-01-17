@@ -21,7 +21,7 @@
 .navbar a {
   text-decoration: none;
   color: var(--color-text-main);
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   padding: 10px;
   border-radius: 16px;
   transition: all 0.3s ease;
@@ -41,7 +41,6 @@
   transform: scale(1.1);
 }
 
-/* Mobile Bottom Bar override */
 @media (max-width: 900px) {
   .navbar {
     position: fixed;
@@ -58,6 +57,6 @@
   }
 
   .navbar a span {
-    display: none; /* No tooltips on mobile */
+    display: none;
   }
 }
